@@ -1,12 +1,19 @@
-### 안녕하세요, 백엔드 개발자 고테아입니다 👋
+# 고테아 | Backend Engineer
 
-외부 API 연동과 데이터 정합성 문제를 원인까지 추적해 해결합니다.
-공공기관 연구자 포털과 업무 시스템을 3년째 개발·운영하고 있습니다.
+외부 API가 실패하거나 데이터가 맞지 않을 때, 로그·원본 데이터·업무 규칙을 대조해 원인을 좁히고 검증 가능한 처리 흐름으로 개선합니다.
 
-- **주로 쓰는 기술:** Java 17 · Spring · Oracle PL/SQL · Python · Django · REST/SOAP 연동
-- **관심 분야:** AI 데이터 파이프라인, RAG, 외부 API 연동 안정성
-- **포트폴리오:** https://vero-zero.github.io
+## 핵심 역량
 
-#### 대표 저장소
-- [synapse-paper-rag-plugin](https://github.com/vero-zero/synapse-paper-rag-plugin) — synapse-sdk로 오픈액세스 논문을 RAG 데이터셋으로 만드는 플러그인 (테스트 19개, Ubuntu·Windows CI)
-- [vero-zero.github.io](https://github.com/vero-zero/vero-zero.github.io) — 포트폴리오 사이트
+- **외부 연계와 장애 대응**: REST·SOAP 연동, 상태 흐름, 타임아웃·오류 응답, 토큰·인코딩·네트워크 문제 분석
+- **Oracle 데이터 정합성**: PL/SQL 프로시저, 이력 데이터, 대량 처리의 금액·상태 불일치를 원인부터 수정하고 테이블 단위로 검증
+- **조회 성능 개선**: 중복 API 호출, 누적 페이징 조회, 1:N 조인 중복 합산, 불필요한 쿼리 구조 개선
+- **검증 중심 개발**: 원본 결과 대조, 합계 재검산, 부하 테스트, 자동 테스트와 CI
+
+## 대표 경험
+
+1. **연구자 포털 외부 연계** — 논문 검색 REST API와 원문 신청 SOAP을 하나의 흐름으로 연결하고, 429 오류를 호출 구조 개선으로 해결했습니다.
+2. **식재료 수발주 데이터 정합성** — 주문·변경·확정 이력을 추적해 일괄 확정 프로시저의 이력 누락을 수정하고, 21,600건 처리 후 5개 테이블을 대조했습니다.
+3. **Synapse RAG 플러그인** — 논문을 RAG 데이터셋으로 변환하는 Python 플러그인을 만들고, 19개 테스트를 Ubuntu·Windows CI에서 실행했습니다.
+
+- [이력서형 경력 포트폴리오](https://vero-zero.github.io)
+- [Synapse Paper RAG Plugin](https://github.com/vero-zero/synapse-paper-rag-plugin)
